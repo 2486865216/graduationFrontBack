@@ -1,5 +1,7 @@
+import {resolve} from 'path';
 import {defineConfig} from 'vite';
 import vue from '@vitejs/plugin-vue';
+import svgLoader from 'vite-svg-loader';
 
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
@@ -9,6 +11,7 @@ import {TDesignResolver} from 'unplugin-vue-components/resolvers';
 export default defineConfig({
     plugins: [
         vue(),
+        svgLoader(),
         AutoImport({
             resolvers: [TDesignResolver({
                 library: 'vue-next'
@@ -20,4 +23,9 @@ export default defineConfig({
             })],
         }),
     ],
+    resolve: {
+        alias: {
+            '@': resolve(__dirname, './src'), // 设置 `@` 指向 `src` 目录
+        }
+    },
 })

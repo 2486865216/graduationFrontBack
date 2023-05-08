@@ -9,6 +9,32 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
+    TAside: typeof import('tdesign-vue-next')['Aside']
+    TBaseTable: typeof import('tdesign-vue-next')['BaseTable']
     TButton: typeof import('tdesign-vue-next')['Button']
+    TCard: typeof import('tdesign-vue-next')['Card']
+    TCheckbox: typeof import('tdesign-vue-next')['Checkbox']
+    TCol: typeof import('tdesign-vue-next')['Col']
+    TContent: typeof import('tdesign-vue-next')['Content']
+    TDialog: typeof import('tdesign-vue-next')['Dialog']
+    TDropdown: typeof import('tdesign-vue-next')['Dropdown']
+    TDropdownItem: typeof import('tdesign-vue-next')['DropdownItem']
+    TDropdownMenu: typeof import('tdesign-vue-next')['DropdownMenu']
+    TForm: typeof import('tdesign-vue-next')['Form']
+    TFormItem: typeof import('tdesign-vue-next')['FormItem']
+    THeader: typeof import('tdesign-vue-next')['Header']
+    THeadMenu: typeof import('tdesign-vue-next')['HeadMenu']
+    TIcon: typeof import('tdesign-vue-next')['Icon']
+    TInput: typeof import('tdesign-vue-next')['Input']
+    TLayout: typeof import('tdesign-vue-next')['Layout']
+    TMenu: typeof import('tdesign-vue-next')['Menu']
+    TMenuItem: typeof import('tdesign-vue-next')['MenuItem']
+    TRow: typeof import('tdesign-vue-next')['Row']
+    TSelectInput: typeof import('tdesign-vue-next')['SelectInput']
+    TSpace: typeof import('tdesign-vue-next')['Space']
+    TSubmenu: typeof import('tdesign-vue-next')['Submenu']
+    TTooltip: typeof import('tdesign-vue-next')['Tooltip']
   }
 }

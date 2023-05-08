@@ -1,13 +1,11 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-
-import {Button} from 'tdesign-vue-next';
-
-// 引入组件库全局样式资源
-import 'tdesign-vue-next/es/style/index.css';
+import '@/style/index.less';
+import '@/style/variables.less';
+import router from '@/router/router'
 
 const app = createApp(App);
 
-app.use(Button);
+app.use(router);
 
 app.mount("#app");
